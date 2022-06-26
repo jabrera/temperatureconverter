@@ -6,7 +6,7 @@ https://temperature-converter.juvarabrera.com
 
 ## Functionalities
 1. Convert celsius value to fahrenheit
-2. Convert fahrenheit to celsius
+2. Convert fahrenheit value to celsius
 3. Toggle between light and dark theme mode
 4. Save theme and load saved theme whenever page is loaded
 
@@ -20,6 +20,10 @@ Additional functionalities
 
 ## Libraries Used
 - Materialdesignicons.com - this is used to render icons for buttons
+
+## Platforms Used
+1. Firebase - used to deploy the static application to the cloud
+2. DialogFlow - used to create the chatbot that converts temperature
 
 ## How to Run the Application
 ### Option A
