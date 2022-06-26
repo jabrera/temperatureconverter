@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="shortcut icon" href="static/images/icons/128.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/styles/style.css">
+    <link rel="stylesheet" href="static/styles/mdi.css">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="static/images/icons/512.png" sizes="192x192">
+    <meta name="theme-color" content="white">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Temperature Converter">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+</head>
+<body data-theme="light">
+    <main>
+        <img src="static/images/logo.png">
+        <p>Select mode:</p>
+        <div class="modes">
+            <button data-mode="form" class="active">Form</button>
+            <button data-mode="chatbot">Chatbot</button>
+        </div>
+        <div class="converter" data-convert="cf">
+            <div>
+                <input type="number" id="txtInputValue" placeholder="Enter value">
+                <button class="btn" id="btnConvert" title="Toggle between Celsius and Fahrenheit">
+                    <i class="mdi" id="iconInputUnit"></i>
+                </button>
+            </div>
+            <span>
+                <i class="mdi mdi-approximately-equal"></i><br><br>
+                <span id="lblOutputValue">-</span><i class="mdi" id="iconOutputUnit"></i>
+                <div id="lblRemarks"></div>
+            </span>
+        </div>
+        <div class="chatbot" style="display: none">
+            <iframe width="300px" height="430" allow="" src="https://console.dialogflow.com/api-client/demo/embedded/bb67ae1c-0155-42ef-8a26-cfead75c43a2"></iframe>
+        </div>
+        <div class="offline" style="display: none">
+            <p>You are offline. You cannot talk to the chatbot. Please connect to the internet first.</p>
+        </div>
+    </main>
+    <button id="btnThemeToggle" title="Toggle between light and dark mode"><i class="mdi mdi-theme-light-dark"></i></button>
+    <script src="static/scripts/script.js"></script>
+</body>
+</html>
